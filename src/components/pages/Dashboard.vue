@@ -5,8 +5,8 @@
       <div class="random_clip_container">
         <ClipPlayer/>
       </div>
-      <div class="random_clip_container">
-        <ClipPlayer/>
+      <div class="clip_list_container">
+        <ClipList/>
       </div>
     </div>
   </div>
@@ -15,12 +15,14 @@
 <script>
     import ClipSearch from '../ClipSearch'
     import ClipPlayer from '../ClipPlayer'
+    import ClipList from '../ClipList'
 
     export default {
     name: 'Dashboard',
     components: {
       ClipSearch,
-      ClipPlayer
+      ClipPlayer,
+      ClipList
     },
     }
 </script>
@@ -32,8 +34,8 @@
 
 .random_clip_and_trending_container {
   width: 100%;
-  height: 0;
   padding-bottom: 28%;
+  height: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -43,6 +45,7 @@
 
 .random_clip_container {
   width: calc(50% - 8px);
+  height: 100%;
 }
 
 .random_clip_container:nth-child(odd) {
@@ -51,6 +54,11 @@
 
 .random_clip_container:nth-child(even) {
   margin-left: 8px;
+}
+
+.clip_list_container {
+  width: calc(50% - 8px);
+  height: 100%;
 }
 
 </style>

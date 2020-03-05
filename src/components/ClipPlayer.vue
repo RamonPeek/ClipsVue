@@ -24,7 +24,7 @@
     position: relative;
     width: 100%;
     padding-bottom: 56%;
-    height: 0;
+    height: 100%;
 }
 
 .clip_container {
