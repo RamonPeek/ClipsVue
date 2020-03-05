@@ -1,7 +1,7 @@
 <template>
   <div id="clip_player">
-    <md-card>
-      <md-card-content class="clip_container">
+    <md-card class="clip_player_container">
+      <md-card-content>
         <video width="100%" height="100%" controls>
           <source src="test.mp4" type="video/mp4">
           Your browser does not support the video tag.
@@ -21,13 +21,15 @@
 
 <style scoped>
 #clip_player {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56%;
-    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
-.clip_container {
-  padding-bottom: 16px !important;
+.clip_player_container {
+  height: 95%;
 }
+
 </style>

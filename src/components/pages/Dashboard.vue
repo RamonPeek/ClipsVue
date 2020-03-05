@@ -34,8 +34,6 @@
 
 .random_clip_and_trending_container {
   width: 100%;
-  padding-bottom: 28%;
-  height: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -44,21 +42,17 @@
 }
 
 .random_clip_container {
+  position: relative;
+  padding-top: 28%;
   width: calc(50% - 8px);
-  height: 100%;
-}
-
-.random_clip_container:nth-child(odd) {
   margin-right: 8px;
 }
 
-.random_clip_container:nth-child(even) {
-  margin-left: 8px;
-}
-
 .clip_list_container {
+  position: relative;
+  padding-top: 28%;
   width: calc(50% - 8px);
-  height: 100%;
+  margin-left: 8px;
 }
 
 </style>
