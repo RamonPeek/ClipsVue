@@ -1,6 +1,13 @@
 <template>
   <div id="clip_player">
-    test
+    <md-card>
+      <md-card-content class="clip_container">
+        <video width="100%" height="100%" controls>
+          <source src="test.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </md-card-content>
+    </md-card>
   </div>
 </template>
 
@@ -17,8 +24,10 @@
     position: relative;
     width: 100%;
     padding-bottom: 56%;
-    float: left;
     height: 0;
-    background-color: red;
+}
+
+.clip_container {
+  padding-bottom: 16px !important;
 }
 </style>

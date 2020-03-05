@@ -24,7 +24,7 @@
 #navigation {
   height: 100%;
   width: calc(3vw + 125px);
-  position: absolute;
+  position: fixed;
   float: left;
   background-color: #ddd;
 }
