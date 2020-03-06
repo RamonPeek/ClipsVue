@@ -47,4 +47,11 @@
   margin-top: 20px;
   margin-bottom: 10px;
 }
+
+
+@media only screen and (max-width: 768px) {
+  #navigation {
+    display: none;
+  }
+}
 </style>

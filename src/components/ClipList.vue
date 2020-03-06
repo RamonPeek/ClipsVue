@@ -2,7 +2,7 @@
   <div id="clip_list">
     <md-card class="clip_list_container">
       <md-card-content>
-          <!--test-->
+
       </md-card-content>
     </md-card>
   </div>

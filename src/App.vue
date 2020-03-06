@@ -37,4 +37,13 @@ export default {
   left: calc(3vw + 125px);
   margin: 15px;
 }
+
+@media only screen and (max-width: 768px) {
+
+  .component_container {
+    left: 0;
+    width: calc(100% - 40px);
+  }
+
+}
 </style>
