@@ -27,6 +27,11 @@ export default {
 #app {
   width: 100%;
   height: 100%;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .component_container {
@@ -41,9 +46,12 @@ export default {
 @media only screen and (max-width: 768px) {
 
   .component_container {
+    overflow-y: scroll;
+    position: fixed;
     left: 0;
-    width: calc(100% - 40px);
+    width: calc(100% - 30px);
+    height: calc(100% - 95px) !important;
   }
-
 }
+
 </style>

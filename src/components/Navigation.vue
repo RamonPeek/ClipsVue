@@ -1,11 +1,11 @@
 <template>
   <div id="navigation">
     <p class="navigation_title">Dev menu</p>
-    <ul>
-        <li class="navigation_item"><router-link to="/"><p class="navigation_item_icon"><font-awesome-icon icon="home" /></p>Dashboard</router-link></li>
-        <li class="navigation_item"><router-link to="/clips"><p class="navigation_item_icon"><font-awesome-icon icon="film" /></p>Clips</router-link></li>
-        <li class="navigation_item"><router-link to="/categories"><p class="navigation_item_icon"><font-awesome-icon icon="tags" /></p>Categories</router-link></li>
-        <li class="navigation_item"><router-link to="/login"><p class="navigation_item_icon"><font-awesome-icon icon="sign-in-alt" /></p>Login</router-link></li>
+    <ul class="navigation_items">
+        <li class="navigation_item"><router-link to="/"><p class="navigation_item_icon"><font-awesome-icon icon="home" /></p><p class="navigation_item_text">Dashboard</p></router-link></li>
+        <li class="navigation_item"><router-link to="/clips"><p class="navigation_item_icon"><font-awesome-icon icon="film" /></p><p class="navigation_item_text">Clips</p></router-link></li>
+        <li class="navigation_item"><router-link to="/categories"><p class="navigation_item_icon"><font-awesome-icon icon="tags" /><p class="navigation_item_text">Categories</p></router-link></li>
+        <li class="navigation_item"><router-link to="/login"><p class="navigation_item_icon"><font-awesome-icon icon="sign-in-alt" /></p><p class="navigation_item_text">Login</p></router-link></li>
     </ul>
   </div>
 </template>
@@ -33,7 +33,6 @@
     margin-top: 15px;
     margin-bottom: 15px;
     margin-left: 25px;
-    float: left;
 }
 
 .navigation_item_icon {
@@ -51,7 +50,37 @@
 
 @media only screen and (max-width: 768px) {
   #navigation {
+    height: 80px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    font-size: 18pt;
+    background-color: white;
+    border-top: 3px solid #448AFF;
+  }
+
+  .navigation_items {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .navigation_title {
     display: none;
   }
+
+  .navigation_item {
+    margin: unset !important;
+    padding-top: 10px;
+  }
+
+  .navigation_item_text {
+    display: none;
+  }
+
+  .navigation_item_icon {
+    color: #448AFF !important;
+}
 }
 </style>
