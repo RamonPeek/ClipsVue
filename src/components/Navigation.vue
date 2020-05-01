@@ -25,7 +25,7 @@
   width: calc(3vw + 125px);
   position: fixed;
   float: left;
-  background-color: #111;
+  background-color: #030a16;
   color: #448AFF !important;
   border-top: unset;
   border-right: 3px solid #448AFF;
