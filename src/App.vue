@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <InfoHeader/>
     <Navigation/>
     <div class="component_container">
       <vue-page-transition name="fade">
@@ -12,11 +13,14 @@
 <script>
 
 import Navigation from './components/Navigation'
+import InfoHeader from './components/InfoHeader'
+
 
 export default {
   name: 'App',
   components: {
-    Navigation
+    Navigation,
+    InfoHeader
   },
 }
 </script>
@@ -40,6 +44,7 @@ export default {
   float: left;
   position: absolute;
   left: calc(3vw + 125px);
+  top: 50px;
   margin: 15px;
 }
 
@@ -50,7 +55,7 @@ export default {
     position: fixed;
     left: 0;
     width: calc(100% - 30px);
-    height: calc(100% - 95px) !important;
+    height: calc(100% - 88px) !important;
   }
 }
 

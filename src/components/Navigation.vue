@@ -1,6 +1,5 @@
 <template>
   <div id="navigation">
-    <p class="navigation_title">Dev menu</p>
     <ul class="navigation_items">
         <li class="navigation_item"><router-link to="/"><p class="navigation_item_icon"><font-awesome-icon icon="home" /></p><p class="navigation_item_text">Dashboard</p></router-link></li>
         <li class="navigation_item"><router-link to="/clips"><p class="navigation_item_icon"><font-awesome-icon icon="film" /></p><p class="navigation_item_text">Clips</p></router-link></li>
@@ -22,41 +21,46 @@
 
 <style scoped>
 #navigation {
-  height: 100%;
+  height: calc(100% - 48px);
   width: calc(3vw + 125px);
   position: fixed;
   float: left;
-  background-color: #ddd;
+  background-color: #111;
+  color: #448AFF !important;
+  border-top: unset;
+  border-right: 3px solid #448AFF;
+  top: 48px;
+  z-index: 9001;
 }
 
 .navigation_item {
     margin-top: 15px;
     margin-bottom: 15px;
     margin-left: 25px;
+    color: #448AFF !important;
 }
 
 .navigation_item_icon {
     padding-right: 10px;
     float: left;
+    color: #448AFF !important;
 }
 
-.navigation_title {
-  font-size: 16pt;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 10px;
+.navigation_item_text {
+  color: #448AFF !important;
 }
 
 
 @media only screen and (max-width: 768px) {
   #navigation {
-    height: 80px;
+    height: 70px;
     width: 100%;
     bottom: 0;
     left: 0;
     font-size: 18pt;
-    background-color: white;
     border-top: 3px solid #448AFF;
+    border-right: unset;
+    top: unset;
   }
 
   .navigation_items {
@@ -64,10 +68,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-  }
-
-  .navigation_title {
-    display: none;
   }
 
   .navigation_item {
@@ -78,9 +78,5 @@
   .navigation_item_text {
     display: none;
   }
-
-  .navigation_item_icon {
-    color: #448AFF !important;
-}
 }
 </style>
